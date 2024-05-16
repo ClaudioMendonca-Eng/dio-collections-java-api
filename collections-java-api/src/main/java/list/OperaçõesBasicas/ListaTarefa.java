@@ -38,14 +38,19 @@ public class ListaTarefa {
 
     public static void main(String[] args) {
         ListaTarefa listaTarefa = new ListaTarefa();
+        System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.adicionarTarefa("Estudar Java");
         listaTarefa.adicionarTarefa("Estudar Java");
         listaTarefa.adicionarTarefa("Estudar Spring");
+        listaTarefa.adicionarTarefa("Estudar Angular");
+        listaTarefa.adicionarTarefa("Estudar Python");
         System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.removerTarefa("Estudar Spring");
         System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.obterDescricaoTarefas();
     }
 
 }
