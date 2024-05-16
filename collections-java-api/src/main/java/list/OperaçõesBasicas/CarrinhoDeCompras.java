@@ -26,6 +26,14 @@ public class CarrinhoDeCompras {
         }
         itens.removeAll(itensRemover);
     }
+    
+    public double calcularValorTotal() {
+        double valorTotal = 0;
+        for (Item item : itens) {
+            valorTotal += item.getPreco() * item.getQuantidade();
+        }
+        return valorTotal;
+    }
 
     public double obterValorTotal() {
         double valorTotal = 0;
@@ -41,19 +49,28 @@ public class CarrinhoDeCompras {
         }
     }
 
+
     public static void main(String[] args) {
+        // Criando uma instância do carrinho de compras
         CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
-        System.out.println("O valor total do carrinho é: " + carrinhoDeCompras.obterValorTotal());
 
-        carrinhoDeCompras.adicionarItem("Camiseta", 50.0, 2);
-        carrinhoDeCompras.adicionarItem("Calça", 100.0, 1);
-        carrinhoDeCompras.adicionarItem("Tênis", 200.0, 1);
-        System.out.println("O valor total do carrinho é: " + carrinhoDeCompras.obterValorTotal());
+        // Adicionando itens ao carrinho
+        carrinhoDeCompras.adicionarItem("Lápis", 2d, 3);
+        carrinhoDeCompras.adicionarItem("Lápis", 2d, 3);
+        carrinhoDeCompras.adicionarItem("Caderno", 35d, 1);
+        carrinhoDeCompras.adicionarItem("Borracha", 2d, 2);
 
-        carrinhoDeCompras.removerItem("Calça");
-        System.out.println("O valor total do carrinho é: " + carrinhoDeCompras.obterValorTotal());
-
+        // Exibindo os itens no carrinho
         carrinhoDeCompras.obterItens();
+
+        // Removendo um item do carrinho
+        carrinhoDeCompras.removerItem("Lápis");
+
+        // Exibindo os itens atualizados no carrinho
+        carrinhoDeCompras.obterItens();
+
+        // Calculando e exibindo o valor total da compra
+        System.out.println("O valor total da compra é = " + carrinhoDeCompras.calcularValorTotal());
     }
 
 }
