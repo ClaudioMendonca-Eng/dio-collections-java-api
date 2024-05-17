@@ -26,24 +26,24 @@ Este repositório é referente ao curso "Collection Framework API Java" e é uma
 |----------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------|
 | boolean                          | add(E e)                              | Assegura que esta coleção contém o elemento especificado (operação opcional).                      |
 | boolean                          | addAll(Collection<? extends E> c)     | Adiciona todos os elementos da coleção especificada a esta coleção (operação opcional).            |
-| void                             | clear()                               | Remove todos os elementos desta coleção (operação opcional).                                       |
+| void                             | clear(  )                               | Remove todos os elementos desta coleção (operação opcional).                                       |
 | boolean                          | contains(Object o)                    | Retorna true se esta coleção contiver o elemento especificado.                                     |
 | boolean                          | containsAll(Collection<?> c)          | Retorna true se esta coleção contiver todos os elementos na coleção especificada.                  |
 | boolean                          | equals(Object o)                      | Compara o objeto especificado com esta coleção para igualdade.                                     |
-| int                              | hashCode()                            | Retorna o valor do hash code para esta coleção.                                                    |
-| boolean                          | isEmpty()                             | Retorna true se esta coleção não contiver elementos.                                               |
-| Iterator<E>                      | iterator()                            | Retorna um iterador sobre os elementos desta coleção.                                              |
-| default Stream<E>                | parallelStream()                      | Retorna um possivelmente paralelo Stream com esta coleção como sua fonte.                          |
+| int                              | hashCode(  )                            | Retorna o valor do hash code para esta coleção.                                                    |
+| boolean                          | isEmpty(  )                             | Retorna true se esta coleção não contiver elementos.                                               |
+| Iterator<E>                      | iterator(  )                            | Retorna um iterador sobre os elementos desta coleção.                                              |
+| default Stream<E>                | parallelStream(  )                      | Retorna um possivelmente paralelo Stream com esta coleção como sua fonte.                          |
 | boolean                          | remove(Object o)                      | Remove uma única instância do elemento especificado desta coleção, se estiver presente (opcional). |
 | boolean                          | removeAll(Collection<?> c)            | Remove todos os elementos desta coleção que também estão contidos na coleção especificada (opcional).|
 | default boolean                  | removeIf(Predicate<? super E> filter) | Remove todos os elementos desta coleção que satisfazem o predicado dado.                           |
 | boolean                          | retainAll(Collection<?> c)            | Retém apenas os elementos nesta coleção que estão contidos na coleção especificada (opcional).      |
-| int                              | size()                                | Retorna o número de elementos nesta coleção.                                                       |
-| default Spliterator<E>           | spliterator()                         | Cria um Spliterator sobre os elementos nesta coleção.                                              |
-| default Stream<E>                | stream()                              | Retorna um Stream sequencial com esta coleção como sua fonte.                                      |
-| Object[]                         | toArray()                             | Retorna um array contendo todos os elementos desta coleção.                                        |
-| default <T> T[]                  | toArray(IntFunction<T[]> generator)   | Retorna um array contendo todos os elementos desta coleção, usando a função geradora fornecida.    |
-| <T> T[]                          | toArray(T[] a)                        | Retorna um array contendo todos os elementos desta coleção; o tipo em tempo de execução do array retornado é o do array especificado. |
+| int                              | size(  )                                | Retorna o número de elementos nesta coleção.                                                       |
+| default Spliterator<E>           | spliterator(  )                         | Cria um Spliterator sobre os elementos nesta coleção.                                              |
+| default Stream<E>                | stream(  )                              | Retorna um Stream sequencial com esta coleção como sua fonte.                                      |
+| Object[  ]                         | toArray(  )                             | Retorna um array contendo todos os elementos desta coleção.                                        |
+| default <T> T[  ]                  | toArray(IntFunction<T[  ]> generator)   | Retorna um array contendo todos os elementos desta coleção, usando a função geradora fornecida.    |
+| <T> T[  ]                          | toArray(T[  ] a)                        | Retorna um array contendo todos os elementos desta coleção; o tipo em tempo de execução do array retornado é o do array especificado. |
 
 
 <p align="center">
