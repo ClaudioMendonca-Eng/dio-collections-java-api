@@ -26,7 +26,7 @@ public class CatalogoLivros {
         return livrosAutor;
     }
 
-    public List<Livro> pesquisaPorIntervaloAnos (int anoInicio, int anoFim) {
+    public List<Livro> pesquisarPorIntervaloAnos (int anoInicio, int anoFim) {
         List<Livro> livrosPorIntervaloAno = new ArrayList<>();
         for (Livro livro : livrosList) {
             if (livro.getAno() >= anoInicio && livro.getAno() <= anoFim) {
@@ -36,7 +36,7 @@ public class CatalogoLivros {
         return livrosPorIntervaloAno;
     }
 
-    public Livro pesquisaPorTitulo(String titulo) {
+    public Livro pesquisarPorTitulo(String titulo) {
         Livro livroPorTitulo = null;
         for (Livro livro : livrosList) {
             if (livro.getTitulo().equalsIgnoreCase(titulo)) {
@@ -46,4 +46,45 @@ public class CatalogoLivros {
         }
         return livroPorTitulo;
     }
+    public static void main(String[] args) {
+
+        // Criando uma instância do catálogo de livros
+        CatalogoLivros catalogoLivros = new CatalogoLivros();
+    
+        // Adicionando livros ao catálogo
+        catalogoLivros.adicionarLivro("Microsserviços Prontos Para a Produção", "Susan J. Fowler", 2017);
+        catalogoLivros.adicionarLivro("Java Guia do Programador", "Peter Jandl Junior", 2021);
+        catalogoLivros.adicionarLivro("Código Limpo", "Robert C. Martin", 2009);
+        catalogoLivros.adicionarLivro("O Codificador Limpo", "Robert C. Martin", 2012);
+    
+        // Exibindo livros pelo mesmo autor
+        System.err.println("------------------------------------");
+        System.err.println("Livros do autor Robert C. Martin:");
+        System.out.println(catalogoLivros.pesquisarPorAutor("Robert C. Martin"));
+    
+        // Exibindo livros pelo mesmo autor (caso em que não há livros de um autor específico)
+        System.err.println("------------------------------------");
+        System.err.println("Livros do autor Autor Inexistente:");
+        System.out.println(catalogoLivros.pesquisarPorAutor("Autor Inexistente"));
+    
+        // Exibindo livros dentro de um intervalo de anos
+        System.err.println("------------------------------------");
+        System.err.println("Livros entre 2010 e 2022:");
+        System.out.println(catalogoLivros.pesquisarPorIntervaloAnos(2010, 2022));
+    
+        // Exibindo livros dentro de um intervalo de anos (caso em que não há livros no intervalo)
+        System.err.println("------------------------------------");
+        System.err.println("Livros entre 2025 e 2030:");
+        System.out.println(catalogoLivros.pesquisarPorIntervaloAnos(2025, 2030));
+    
+        // Exibindo livros por título
+        System.err.println("------------------------------------");
+        System.err.println("Livro com título Java Guia do Programador:");
+        System.out.println(catalogoLivros.pesquisarPorTitulo("Java Guia do Programador"));
+    
+        // Exibindo livros por título (caso em que não há livros com o título especificado)
+        System.err.println("------------------------------------");
+        System.err.println("Livro com título Título Inexistente:");
+        System.out.println(catalogoLivros.pesquisarPorTitulo("Título Inexistente"));
+      }
 }
