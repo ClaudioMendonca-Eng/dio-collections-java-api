@@ -99,11 +99,11 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 
 ### Livros citados:
 
-- ✨ Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos - https://amzn.to/3IVsZRM
-- ✨ Microsserviços Prontos Para a Produção: Construindo Sistemas Padronizados em uma Organização de Engenharia de Software - https://amzn.to/3oOUkyb
-- ✨ Java - Guia do Programador: Atualizado Para Java 16 - https://amzn.to/3oJPanf
-- ✨ Microsserviços Prontos Para a Produção: Construindo Sistemas Padronizados em uma Organização de Engenharia de Software - https://amzn.to/3MOMVHf
-- ✨ Kotlin em ação - https://amzn.to/3MFyncM
+- ✨ Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos 
+- ✨ Microsserviços Prontos Para a Produção: Construindo Sistemas Padronizados em uma Organização de Engenharia de Software 
+- ✨ Java - Guia do Programador: Atualizado Para Java 16 
+- ✨ Microsserviços Prontos Para a Produção: Construindo Sistemas Padronizados em uma Organização de Engenharia de Software 
+- ✨ Kotlin em ação  
 
 ---
 
@@ -115,8 +115,3 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 
 [3] "Java™ Platform, Standard Edition 17 API Specification - Class Collections." Oracle. Disponível em: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html.
 
----
-
-### Dúvidas e Suporte
-
-Caso você tenha alguma dúvida, problema ou sugestão, fique à vontade para abrir uma issue no repositório. Espero conseguir te ajudar! (:
