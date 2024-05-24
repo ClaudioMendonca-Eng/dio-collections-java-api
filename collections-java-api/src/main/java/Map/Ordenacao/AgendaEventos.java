@@ -52,6 +52,11 @@ public class AgendaEventos {
     agendaEventos.adicionarEvento(LocalDate.of(2000, 1, 10), "Lançamento de Software", "Demonstração da nova versão");
     agendaEventos.adicionarEvento(LocalDate.of(2023, Month.AUGUST, 28), "Hackathon de Inovação", "Competição de soluções criativas");
     agendaEventos.adicionarEvento(LocalDate.of(2024, 9, 20), "Seminário de Inteligência Artificial", "Discussão sobre IA avançada");
+    agendaEventos.adicionarEvento(LocalDate.of(2022, 7, 9), "Fórum de TI", "Debates sobre tendências tecnológicas");
+    // Adiciona eventos à agenda data de hoje
+    agendaEventos.adicionarEvento(LocalDate.of(2024, Month.MAY, 23), "Evento de Hoje", "Descrição do evento de hoje");
+    agendaEventos.adicionarEvento(LocalDate.of(2024, Month.MAY, 23), "Evento de Hoje 2", "Descrição do evento de hoje 2");
+    
 
     // Exibe a agenda completa de eventos
     agendaEventos.exibirAgenda();
