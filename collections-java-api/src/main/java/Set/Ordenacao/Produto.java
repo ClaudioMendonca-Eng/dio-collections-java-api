@@ -1,77 +1,78 @@
 package main.java.Set.Ordenacao;
 
-
-
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Produto implements Comparable<Produto> {
-    // Atributos
-    private long codigo;
-    private String nome;
-    private Double preco;
-    private int quantidade;
+  //atributos
+  private long codigo;
+  private String nome;
+  private double preco;
+  private int quantidade;
 
-    // Construtor
-    public Produto(long codigo, String nome, Double preco, int quantidade) {
-        this.codigo = codigo;
-        this.nome = nome;
-        this.preco = preco;
-        this.quantidade = quantidade;
-    }
+  public Produto(long codigo, String nome, double preco, int quantidade) {
+    this.codigo = codigo;
+    this.nome = nome;
+    this.preco = preco;
+    this.quantidade = quantidade;
+  }
 
-    // Getters
-    public long getCodigo() {
-        return codigo;
-    }
+  @Override
+  public int compareTo(Produto p) {
+    return nome.compareToIgnoreCase(p.getNome());
+  }
 
-    public String getNome() {
-        return nome;
-    }
+  public long getCodigo() {
+    return codigo;
+  }
 
-    public Double getPreco() {
-        return preco;
-    }
+  public String getNome() {
+    return nome;
+  }
 
-    public int getQuantidade() {
-        return quantidade;
-    }
+  public double getPreco() {
+    return preco;
+  }
 
-    // equals somente codigo
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Produto)) return false;
+  public int getQuantidade() {
+    return quantidade;
+  }
 
-        Produto produto = (Produto) o;
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Produto produto)) return false;
+    return getCodigo() == produto.getCodigo();
+  }
 
-        return codigo == produto.codigo;
-    }
-    
+  @Override
+  public int hashCode() {
+    return Objects.hash(getCodigo());
+  }
 
-    // toString
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "codigo=" + codigo +
-                ", nome='" + nome + '\'' +
-                ", preco=" + preco +
-                ", quantidade=" + quantidade +
-                '}';
-    }
-
-    // compareTo
-    @Override
-    public int compareTo(Produto outroProduto) {
-        return nome.compareToIgnoreCase(outroProduto.getNome());
-    }
-
-    class ComparatorPorPreco implements Comparator<Produto> {
-        @Override
-        public int compare(Produto p1, Produto p2) {
-          return Double.compare(p1.getPreco(), p2.getPreco());
-        }
-      }
-
-
+  @Override
+  public String toString() {
+    return "Produto{" +
+        "codigo=" + codigo +
+        ", nome='" + nome + '\'' +
+        ", preco=" + preco +
+        ", quantidade=" + quantidade +
+        '}';
+  }
 }
+
+class ComparatorPorPreco implements Comparator<Produto> {
+  @Override
+  public int compare(Produto p1, Produto p2) {
+    return Double.compare(p1.getPreco(), p2.getPreco());
+  }
+}
+
+
+
+
+
+
+
+
 
