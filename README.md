@@ -80,3 +80,15 @@
 [4] "Java™ Platform, Standard Edition 17 API Specification - Class Collections." Oracle. Disponível em: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html.
 
 ---
+## Certificados
+
+- Conhecendo Collections Java
+
+[![Certificado](img/01_certificado.png)](https://www.dio.me/certificate/OWGMYYLC)
+
+
+## Licença
+
+<a href="https://www.buymeacoffee.com/claudiomendonca" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+Copyright © 2024 <a href="https://www.claudiomendonca.eng.br" target="_blank">ClaudioMendonca.eng.br</a> . 
