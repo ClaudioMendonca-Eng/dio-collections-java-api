@@ -55,6 +55,10 @@ Este repositório é referente ao curso "Collection Framework API Java" e é uma
 ### Exercicios e explicações:
 
 - [ComparableX Comparator](collections-java-api/src/main/java/comparableXcomparator/README.md)
+- [Generics Type](collections-java-api/src/main/java/generics/README.md)
+- [List Interface](collections-java-api/src/main/java/list/README.md)
+- [MAP](collections-java-api/src/main/java/Map/README.md)
+- [SET](collections-java-api/src/main/java/Set/README.md)
 
 
 ---

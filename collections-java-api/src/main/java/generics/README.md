@@ -1,5 +1,9 @@
 # Generics Type
 
+<p align="right">
+  <a href="https://github.com/ClaudioMendonca-Eng/dio-collections-java-api" style="text-decoration: none; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px;">Voltar para o início</a>
+</p>
+
 - Um tipo genérico é uma classe genérica ou uma interface que é parametrizada em relação a tipos. 
 - A classe `Box` a seguir será modificada para demonstrar o conceito:
 
