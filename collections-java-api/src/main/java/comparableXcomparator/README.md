@@ -1,5 +1,8 @@
 # Comparable X Comparator
-- [Voltar](https://github.com/ClaudioMendonca-Eng/dio-collections-java-api)
+
+<p align="right">
+  <a href="https://github.com/ClaudioMendonca-Eng/dio-collections-java-api" style="text-decoration: none; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px;">Voltar para o início</a>
+</p>
 
 ## Comparable
 
