@@ -50,6 +50,12 @@ Este repositório é referente ao curso "Collection Framework API Java" e é uma
 <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html">Method Sumary Collection Interface</a>
 </p>
 
+---
+
+### Exercicios e explicações:
+
+- [ComparableX Comparator](collections-java-api/src/main/java/comparableXcomparator/README.md)
+
 
 ---
 
